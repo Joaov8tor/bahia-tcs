@@ -5,38 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bahia - The Classic Soccer</title>
     <style>
+        /* Fonte Moderna */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #0033A0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #001f44, #0033a0);
             color: white;
             text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        /* Cabeçalho */
         header {
-            background-color: #E41E26;
-            padding: 15px;
+            background: rgba(0, 51, 160, 0.8);
+            padding: 25px;
+            border-bottom: 3px solid #e41e26;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 999;
         }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        /* Containers */
         .container {
-            margin: 20px;
-            padding: 20px;
-            background: white;
-            color: black;
-            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px auto;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
         }
+
+        .container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+        }
+
         .botao {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #E41E26;
+            padding: 12px 25px;
+            margin: 15px;
+            background: linear-gradient(135deg, #e41e26, #990000);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+
         .botao:hover {
-            background-color: #990000;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #990000, #e41e26);
         }
-        .noticia img {
-            width: 50px;
-            vertical-align: middle;
+
+        /* Notícia */
+        .noticia {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 51, 160, 0.8);
+            color: white;
+            padding: 15px 0;
+            font-size: 18px;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer a {
+            color: #ffd700;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 32px;
+            }
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+            .botao {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
@@ -49,9 +126,7 @@
     <div class="container">
         <h2>Últimas Notícias</h2>
         <p class="noticia">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Flamengo_braz_logo.svg" alt="Flamengo">
-            Flamengo 11 x 1 Bahia
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Esporte_Clube_Bahia_logo.svg" alt="Bahia">
+            Flamengo 11 x 1 Bahia - Bahia eliminado da Copa TCS
         </p>
         <p>Data do jogo: Ontem</p>
         <a href="#" class="botao">Ver Notícias</a>
@@ -70,7 +145,7 @@
     </div>
     
     <footer>
-        <p>Entre no nosso Discord: <a href="https://discord.gg/gkNfsk7ncR" target="_blank" style="color: yellow;">Clique Aqui</a></p>
+        <p>Entre no nosso Discord: <a href="https://discord.gg/gkNfsk7ncR" target="_blank">Clique Aqui</a></p>
     </footer>
 </body>
 </html>
