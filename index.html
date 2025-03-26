@@ -1,1 +1,138 @@
-O SITE BAHIA TCS FOI ENCERRADO APOS A DESCONTINUAÇÃO DO SITE 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahia - The Classic Soccer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #001f44, #0033a0);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: rgba(0, 51, 160, 0.9);
+            padding: 25px;
+            border-bottom: 3px solid #e41e26;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px auto;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 15px;
+            background: linear-gradient(135deg, #e41e26, #990000);
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border: 2px solid white;
+        }
+
+        .botao:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+        }
+
+        .noticia {
+            font-size: 22px;
+            line-height: 1.8;
+            margin-top: 10px;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 900px;
+            padding: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 4px solid #0099ff;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #0099ff;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+
+        iframe:hover {
+            box-shadow: 0 0 35px #00ccff;
+        }
+
+        footer {
+            padding: 15px;
+            font-size: 18px;
+            margin-top: 20px;
+            background: rgba(0, 0, 50, 0.9);
+        }
+
+        footer a {
+            color: #00ccff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-shadow: 0 0 10px #00ccff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bahia - The Classic Soccer</h1>
+        <p>Notícias sobre jogos, treinos, contratações e mais!</p>
+    </header>
+    
+    <div class="container">
+        <h2>Últimas Notícias</h2>
+        <p class="noticia">Bahia x Ceará - Jogo importante para a temporada</p>
+        <p>Data do jogo: <strong>Data indefinida</strong></p>
+        
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/nTRCbGRC6QQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <a class="botao" href="https://www.youtube.com/live/O8FSuYB_aB0?si=wyws7cpxcGG9E83n" target="_blank">Assistir no YouTube</a>
+        <a class="botao" href="https://discord.gg/KZH4XMGfHS" target="_blank">Assistir no Discord</a>
+    </div>
+
+    <footer>
+        <p>Entre no nosso Discord: <a href="https://discord.gg/KZH4XMGfHS" target="_blank">Clique Aqui</a></p>
+    </footer>
+</body>
+</html>
