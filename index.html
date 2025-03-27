@@ -128,6 +128,45 @@
         footer a:hover {
             text-shadow: 0 0 10px #00ccff;
         }
+
+        /* Estilo do painel de login */
+        .login-panel {
+            background: rgba(0, 51, 160, 0.9);
+            padding: 25px;
+            margin-top: 50px;
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+        }
+
+        .login-panel h2 {
+            font-size: 24px;
+            color: white;
+        }
+
+        .login-panel input {
+            width: 80%;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 18px;
+            border-radius: 8px;
+            border: 2px solid #e41e26;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .login-panel input[type="submit"] {
+            background: #e41e26;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .login-panel input[type="submit"]:hover {
+            background: #990000;
+        }
+
     </style>
 </head>
 <body>
@@ -162,6 +201,16 @@
             <p><strong>ZAG:</strong> Bernard</p>
             <p><strong>GK:</strong> Leo</p>
         </div>
+    </div>
+
+    <!-- Painel de login do administrador -->
+    <div class="login-panel">
+        <h2>Área de Administraçao</h2>
+        <form action="admin_login.php" method="POST">
+            <input type="text" name="usuario" placeholder="Usuário" required><br>
+            <input type="password" name="senha" placeholder="Senha" required><br>
+            <input type="submit" value="Entrar">
+        </form>
     </div>
 
     <footer>
